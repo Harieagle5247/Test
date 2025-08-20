@@ -10,7 +10,7 @@ def call(){
             choice(name: 'DEPLOY_ENV',choices: ['Dev','Qa','Prod'],description: 'Select Deployment Environment')
         }
         environment{
-            GitURL = "https://mobius-gitlab.bt.com/platformservices/DSO/sample-project.git"
+            GitURL = "https://github.com/Harieagle5247/simple-java-maven-app.git"
             ARTIFACT_REPO = "/var/artifacts"
             BUILD_INFO    = "${env.JOB_NAME}-${env.BUILD_NUMBER}"
             GIT_CREDENTIALS_ID = 'github'
