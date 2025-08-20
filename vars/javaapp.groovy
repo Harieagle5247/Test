@@ -13,7 +13,6 @@ def call(){
             GitURL = "https://github.com/Harieagle5247/simple-java-maven-app.git"
             ARTIFACT_REPO = "/var/artifacts"
             BUILD_INFO    = "${env.JOB_NAME}-${env.BUILD_NUMBER}"
-            GIT_CREDENTIALS_ID = 'github'
         }
         stages{
             stage('Checkout'){
