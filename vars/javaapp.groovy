@@ -13,7 +13,7 @@ def call(){
             GitURL = "https://mobius-gitlab.bt.com/platformservices/DSO/sample-project.git"
             ARTIFACT_REPO = "/var/artifacts"
             BUILD_INFO    = "${env.JOB_NAME}-${env.BUILD_NUMBER}"
-            GIT_CREDENTIALS_ID = 'pavan-gitlab-token'
+            GIT_CREDENTIALS_ID = 'github'
         }
         stages{
             stage('Checkout'){
