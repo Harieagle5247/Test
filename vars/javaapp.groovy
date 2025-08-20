@@ -68,7 +68,7 @@ def call(){
 
 def checkoutCode(branch,url){
     echo "Checking out Branch : ${params.BRANCH_NAME}"
-    git branch: branch,url: url,credentialsId: env.GIT_CREDENTIALS_ID
+    git branch: branch,url: url
 }
 
 def buildCode(){
